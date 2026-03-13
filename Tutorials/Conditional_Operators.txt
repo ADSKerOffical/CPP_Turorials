@@ -1,0 +1,45 @@
+В C++ как и в других языках программирований есть условные операторы
+Вот пример:
+
+#include <iostream>
+
+std::string ab = "Text";
+void run() {
+    if (ab == "Text") {
+        std::cout << "Equal Text" << std::endl;
+    } else {
+     std::cout << "Not equal Text" << std::endl;
+    }
+}
+
+int main() {
+    run(); // Equal Text
+    return 0;
+}
+
+? Условия нужно обозначать в скобках
+А вот пример с "или":
+
+#include <iostream>
+
+std::string ab = "Tex";
+std::string ba = "Txet";
+void run() {
+    if (ab == "Text" | ba == "Txet") {
+        std::cout << "Equal Text" << std::endl;
+    } else {
+     std::cout << "Not equal Text" << std::endl;
+    }
+}
+
+int main() {
+    run();
+    return 0;
+}
+
+Вот что значат знаки: {
+  == – если равно
+  != – если не равно
+  && – и
+  | – или
+}
