@@ -1,0 +1,51 @@
+• Для создания цикла нужно использовать оператор for:
+
+#include <iostream>
+
+void run() {
+    for (int i = 0; i < 10; ++i) {
+      std::cout << i << std::endl;
+    }
+}
+
+int main() {
+    run(); // 0...9
+    return 0;
+}
+
+? ++i просто делает итерацию
+? оператор for не просто делает повторения, а он делает повторения до тех пор пока i < 10
+! все циклы задерживают поток скрипта
+
+Также можно сделать так:
+
+#include <iostream>
+
+void run() {
+    for (int i = 0; i < 10; i += 2) {
+        std::cout << i << std::endl;
+    }
+}
+
+int main() {
+    run(); // 0 2 4 6 8
+    return 0;
+}
+
+• Также есть и цикл while:
+
+#include <iostream>
+
+int x = 1;
+void run() {
+  while (x <= 6) {
+    x += 1;
+    std::cout << x << std::endl;
+  }
+  std::cout << "done" << std::endl;
+}
+
+int main() {
+  run();
+  return 0;
+}
