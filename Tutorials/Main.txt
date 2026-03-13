@@ -10,6 +10,7 @@ int main() {
   string – строка
   bool – булевое значение (true/false)
   float/doble/int – целое число
+  ! Для обозначения int/double/float нельзя использовать std
   void – отсутствие типа
 }
 
